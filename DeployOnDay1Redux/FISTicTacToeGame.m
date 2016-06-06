@@ -67,8 +67,6 @@
     if ( [self canPlayAtColumn:column row:row ]) {
         self.board[row][column] = @"X" ;
         NSLog(@"Your move: %@", self.board[row][column]) ;
-        // How is it moving to the next move? Keeps saying "Win" after one move."
-        
     }
 }
 
@@ -81,7 +79,7 @@
 }
 
 -(NSString *)winningPlayer
-{ // Not happening.
+{
     NSLog(@"%@", self.board) ;
     if ( [self.board[0] isEqualToArray: @[@"X", @"X", @"X" ]] ||
         [self.board[1] isEqualToArray: @[@"X", @"X", @"X"] ]||
